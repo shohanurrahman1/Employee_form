@@ -10,6 +10,8 @@
     <!-- Font-awesome Cdn Link Here -->
     <script src="https://kit.fontawesome.com/0c66e46c25.js" crossorigin="anonymous"></script>
     
+    <!-- Style.css Link Here -->
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>

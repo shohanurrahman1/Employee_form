@@ -45,10 +45,10 @@
                             <div class="action-btn">
                               <ul>
                                 <li>
-                                  <a href="update.php?eid=<?php echo $id; ?>"><i class="fa-regular fa-pen-to-square"></i></a>
+                                  <a href="update.php?eid=<?php echo $id; ?>"><i class="fa-regular fa-pen-to-square edit"></i></a>
                                 </li>
                                 <li>
-                                  <a href=""><i class="fa-regular fa-trash-can"></i></a>
+                                  <a href=""><i class="fa-regular fa-trash-can delete"></i></a>
                                 </li>
                               </ul>
                             </div>

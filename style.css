@@ -1,0 +1,22 @@
+.action-btn{
+	text-align: center;
+}
+
+.action-btn ul{
+	padding: 0;
+	margin: 0;
+}
+
+.action-btn ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.action-btn .edit{
+	color: green;
+}
+
+.action-btn .delete{
+	color: red;
+}
