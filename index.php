@@ -17,6 +17,7 @@
                   <th scope="col">Email</th>
                   <th scope="col">Phone No.</th>
                   <th scope="col">Address</th>
+                  <th scope="col">Action</th>
                 </tr>
               </thead>
 
@@ -40,6 +41,18 @@
                           <td><?php echo $email; ?></td>
                           <td><?php echo $phone; ?></td>
                           <td><?php echo $address; ?></td>
+                          <td>
+                            <div class="action-btn">
+                              <ul>
+                                <li>
+                                  <a href="update.php?id=<?php echo $id; ?>"><i class="fa-regular fa-pen-to-square"></i></a>
+                                </li>
+                                <li>
+                                  <a href=""><i class="fa-regular fa-trash-can"></i></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
                         </tr>   
                    <?php }
                 ?>
