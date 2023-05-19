@@ -9,7 +9,7 @@
             <h2 class="text-center pb-5">Employee Contact Details</h2>
 
             <!-- Table Start -->
-            <table class="table table-striped table-hover table-bordered">
+            <table id="example" class="table table-striped table-hover table-bordered">
               <thead class="table-dark">
                 <tr>
                   <th scope="col">#Sl.</th>
@@ -45,37 +45,39 @@
                             <div class="action-btn">
                               <ul>
                                 <li>
+                                  <!-- Edit part -->
                                   <a href="update.php?eid=<?php echo $id; ?>"><i class="fa-regular fa-pen-to-square edit"></i></a>
                                 </li>
-<li>
-  <a href="" data-bs-toggle="modal" data-bs-target="#del<?php echo $id; ?>"><i class="fa-regular fa-trash-can delete"></i></a>
-</li>
+                                <li>
+                                  <!-- Delete part -->
+                                  <a href="" data-bs-toggle="modal" data-bs-target="#del<?php echo $id; ?>"><i class="fa-regular fa-trash-can delete"></i></a>
+                                </li>
                               </ul>
                             </div>
-<!-- Modal Start -->
-<div class="modal fade" id="del<?php echo $id; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Are you Sure!! To delete <strong class="text-success"><?php echo $name; ?></strong> data??</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-btn">
-          <ul>
-            <li>
-              <a href="index.php?delete=<?php echo $id;?>" class="btn btn-danger">Delete</a>
-            </li>
-            <li>
-              <a href="" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal End -->
+                            <!-- Modal Start -->
+                            <div class="modal fade" id="del<?php echo $id; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Are you Sure!! To delete <strong class="text-success"><?php echo $name; ?></strong> data??</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="modal-btn">
+                                      <ul>
+                                        <li>
+                                          <a href="index.php?delete=<?php echo $id;?>" class="btn btn-danger">Delete</a>
+                                        </li>
+                                        <li>
+                                          <a href="" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Modal End -->
                           </td>
                         </tr>   
                    <?php }
